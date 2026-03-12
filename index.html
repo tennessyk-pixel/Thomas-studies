@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeThom – Graphiste Freelance</title>
+  <meta name="description" content="Thomas, graphiste freelance spécialisé en identité visuelle, UI et illustration. Découvrez son portfolio et contactez-le." />
+  <meta name="author" content="Thomas" />
+
+  <!-- Google Fonts : Heebo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="header" role="banner">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#accueil" class="nav__logo">BeThom</a>
+
+      <!-- Bouton burger pour mobile -->
+      <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Liens de navigation -->
+      <ul class="nav__links" id="nav-menu" role="list">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#articles">Blog</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== SECTION HERO / ACCUEIL ========== -->
+    <section id="accueil" class="hero" aria-label="Présentation">
+      <div class="hero__text">
+        <h1>Hi, Je suis Thomas,<br>Graphiste</h1>
+        <p>Passionné par le code et le design, j'aide les entreprises et les créateurs à développer des sites modernes, performants et adaptés à leurs besoins. Mon objectif est de transformer vos idées en expériences numériques fluides et efficaces.</p>
+        <!-- Le fichier PDF doit être placé dans assets/thomas-cv.pdf -->
+        <a href="assets/thomas-cv.pdf" download class="btn btn--primary">Télécharger mon CV</a>
+      </div>
+      <div class="hero__image">
+        <!-- Remplace thomas.jpg par ta vraie photo dans assets/images/ -->
+        <img
+          src="assets/images/thomas.jpg"
+          alt="Photo de Thomas, graphiste freelance"
+          class="hero__photo"
+        />
+      </div>
+    </section>
+
+    <!-- ========== SECTION ARTICLES / BLOG ========== -->
+    <section id="articles" class="articles" aria-label="Articles récents">
+      <div class="container">
+        <div class="articles__header">
+          <h2>Articles recents</h2>
+          <a href="#" class="link--blue">View all</a>
+        </div>
+
+        <div class="articles__grid">
+
+          <!-- Article 1 -->
+          <article class="card">
+            <h3>Créer un design system à partir de zéro</h3>
+            <p class="card__meta">
+              <time datetime="2020-02-12">12 Feb 2020</time>
+              <span class="separator">|</span>
+              <span>Design, Pattern</span>
+            </p>
+            <p>Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d'un projet digital.</p>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="card">
+            <h3>Créer des icônes pixel perfect dans Figma</h3>
+            <p class="card__meta">
+              <time datetime="2020-02-12">12 Feb 2020</time>
+              <span class="separator">|</span>
+              <span>Figma, Icon Design</span>
+            </p>
+            <p>Découvrez mes techniques pour concevoir des icônes nettes et précises dans Figma, adaptées aussi bien au web qu'aux applications mobiles.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION PORTFOLIO ========== -->
+    <section id="portfolio" class="portfolio" aria-label="Travaux en vedette">
+      <div class="container">
+        <h2>Travaux en vedette</h2>
+
+        <div class="portfolio__list">
+
+          <!-- Projet 1 -->
+          <div class="portfolio__item">
+            <img
+              src="assets/images/projet-dashboard.jpg"
+              alt="Capture d'écran du projet de design de tableaux de bord"
+              class="portfolio__img"
+            />
+            <div class="portfolio__info">
+              <h3>Design de tableaux de bord</h3>
+              <div class="portfolio__tags">
+                <span class="tag tag--dark">2020</span>
+                <span class="tag tag--light">Dashboard</span>
+              </div>
+              <p>Un projet de conception d'interface utilisateur pour une plateforme de gestion. L'objectif était de proposer un tableau de bord intuitif et esthétique.</p>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="portfolio__item">
+            <img
+              src="assets/images/projet-portraits.jpg"
+              alt="Illustration numérique de portraits vibrants colorés"
+              class="portfolio__img"
+            />
+            <div class="portfolio__info">
+              <h3>Portraits vibrants de 2020</h3>
+              <div class="portfolio__tags">
+                <span class="tag tag--dark">2018</span>
+                <span class="tag tag--light">Illustration</span>
+              </div>
+              <p>Série d'illustrations numériques réalisées avec une palette de couleurs audacieuses, explorant l'identité et l'émotion à travers le portrait.</p>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="portfolio__item">
+            <img
+              src="assets/images/projet-typo.jpg"
+              alt="Visuel typographique du projet 36 jours de typographie"
+              class="portfolio__img"
+            />
+            <div class="portfolio__info">
+              <h3>36 jours de typographie</h3>
+              <div class="portfolio__tags">
+                <span class="tag tag--dark">2018</span>
+                <span class="tag tag--light">Typography</span>
+              </div>
+              <p>Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à travers une série de visuels graphiques.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION CONTACT ========== -->
+    <section id="contact" class="contact" aria-label="Me contacter">
+      <div class="container">
+        <p class="contact__label">Me contacter</p>
+
+        <div class="contact__inner">
+
+          <!-- Côté gauche : infos -->
+          <div class="contact__info">
+            <h2>Parlons-en</h2>
+            <p>Vous avez une grande idée ou un projet à développer et besoin d'aide ? Contactez-moi, je serai ravi d'échanger avec vous et de vous accompagner.</p>
+
+            <h3>Email</h3>
+            <p><a href="mailto:beebs@gmail.com">beebs@gmail.com</a></p>
+
+            <h3>Socials</h3>
+            <ul class="contact__socials" role="list">
+              <li><a href="#" aria-label="Instagram de Thomas">Instagram</a></li>
+              <li><a href="#" aria-label="Twitter de Thomas">Twitter</a></li>
+              <li><a href="#" aria-label="Facebook de Thomas">Facebook</a></li>
+            </ul>
+          </div>
+
+          <!-- Côté droit : formulaire -->
+          <form class="contact__form" action="#" method="post" aria-label="Formulaire de contact">
+
+            <div class="form__group">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="" required />
+            </div>
+
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="" required />
+            </div>
+
+            <div class="form__group">
+              <label for="service">Quel service vous intéresse</label>
+              <select id="service" name="service">
+                <option value="">Select project type</option>
+                <option value="identite">Identité visuelle</option>
+                <option value="ui">UI Design</option>
+                <option value="illustration">Illustration</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select project budget</option>
+                <option value="500">Moins de 500€</option>
+                <option value="1000">500€ – 1 000€</option>
+                <option value="2000">1 000€ – 2 000€</option>
+                <option value="plus">Plus de 2 000€</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--dark">Envoyer</button>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__socials" aria-label="Réseaux sociaux">
+      <!-- Icônes SVG simples -->
+      <a href="#" aria-label="Facebook">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+    <p class="footer__copy">Copyright ©2020 All rights reserved</p>
+  </footer>
+
+  <!-- ========== JAVASCRIPT : menu burger ========== -->
+  <script>
+    const burger = document.querySelector('.nav__burger');
+    const menu = document.querySelector('.nav__links');
+
+    burger.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('nav__links--open');
+      burger.setAttribute('aria-expanded', isOpen);
+      burger.classList.toggle('nav__burger--open', isOpen);
+    });
+
+    // Fermer le menu quand on clique sur un lien
+    document.querySelectorAll('.nav__links a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('nav__links--open');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.classList.remove('nav__burger--open');
+      });
+    });
+  </script>
+
+</body>
+</html>
